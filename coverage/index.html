@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-08-26T16:08:41-05:00">2023-08-26T16:08:41-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-08-26T17:43:29-05:00">2023-08-26T17:43:29-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  98.31%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="yellow">
-         1.0
+       <span class="red">
+         0.98
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>55</b> relevant lines,
-    <span class="green"><b>55</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <b>59</b> relevant lines,
+    <span class="green"><b>58</b> lines covered</span> and
+    <span class="red"><b>1</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  98.31%
 </span>
 )
   </div>
@@ -83,12 +83,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#a18ddefd3be4b9c452e7b627245af65ab73cc4c4" class="src_link" title="app/controllers/cafes_controller.rb">app/controllers/cafes_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="yellow strong cell--number t-file__coverage">83.33 %</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">6</td>
             <td class="cell--number">5</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0.83</td>
             
           </tr>
         
@@ -227,9 +227,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#3e0e371623b64d6fbf4a16170ad203ece69f9294" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">2</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">3</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -309,8 +309,8 @@
   <div class="header">
     <h3>app/controllers/cafes_controller.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="yellow">
+  83.33%
 </span>
 
       lines covered
@@ -319,9 +319,9 @@
     
 
     <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>6</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
 
     
@@ -343,13 +343,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="2">
+            
             
 
             
 
-            <code class="ruby">  def index </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -360,12 +360,23 @@
 
             
 
+            <code class="ruby">  def index </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="4">
+            
+            
+
+            
+
             <code class="ruby">    @cafes = Cafe.all</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
+          <li class="never" data-hits="" data-linenumber="5">
             
             
 
@@ -376,7 +387,62 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def show </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @cafe = Cafe.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    # require &#39;pry&#39;; binding.pry</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
             
             
 
@@ -2889,8 +2955,8 @@
     
 
     <div class="t-line-summary">
-      <b>2</b> relevant lines.
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>3</b> relevant lines.
+      <span class="green"><b>3</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -2968,7 +3034,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  get &quot;/cafes/:id&quot;, to: &quot;cafes#show&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 

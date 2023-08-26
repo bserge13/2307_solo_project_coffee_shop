@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get "/cafes", to: "cafes#index"
+  get "/cafes/:id", to: "cafes#show"
 end
