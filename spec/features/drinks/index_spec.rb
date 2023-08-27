@@ -9,6 +9,7 @@ RSpec.describe "Drinks index page", type: :feature do
     @drink1 = Drink.create!(name: "Central Perk", dairy_substitute: true, price: 3.75, cafe_id: @cafe1.id)
     @drink2 = Drink.create!(name: "Pumpkin Spice Latte", dairy_substitute: true, price: 2.99, cafe_id: @cafe2.id)
     @drink3 = Drink.create!(name: "House Brew", dairy_substitute: false, price: 1.99, cafe_id: @cafe3.id)
+    @drink4 = @cafe2.drinks.create!(name: "Nicks Brew", dairy_substitute: false, price: 1.99)
   end
 
   describe "As a visitor to /drinks" do 
@@ -18,6 +19,7 @@ RSpec.describe "Drinks index page", type: :feature do
       expect(page).to have_content("Central Perk")
       expect(page).to have_content("Pumpkin Spice Latte")
       expect(page).to have_content("House Brew")
+      expect(page).to have_content("Nicks Brew")
       expect(page).to have_content("true")
       expect(page).to have_content("true")
       expect(page).to have_content("false")
