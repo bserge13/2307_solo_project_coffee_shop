@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "/cafes", to: "cafes#index"
   get "/cafes/:id", to: "cafes#show"
   get "/drinks", to: "drinks#index"
+  get "/drinks/:id", to: "drinks#show"
 end
