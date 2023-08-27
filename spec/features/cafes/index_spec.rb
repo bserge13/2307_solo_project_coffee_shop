@@ -9,7 +9,7 @@ RSpec.describe "Cafes index page", type: :feature do
   end
   
   describe "As a visitor to /cafes" do 
-    it "Shows the names of every cafe record" do 
+    it 'Shows the names of every cafe record' do 
       visit '/cafes' 
 
       expect(page).to have_content("Daily Grind")

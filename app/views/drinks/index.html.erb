@@ -1,0 +1,6 @@
+<h1>Drinks Index Page</h1>
+<% @drinks.each do |drink| %>
+  <h3><%= drink.name %></h3>
+  <h4><%= drink.dairy_substitute %></h4>
+  <h5><%= drink.price %></h5>
+<% end %>   

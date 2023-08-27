@@ -228,12 +228,99 @@
           null,
           1,
           1,
+          1,
           null
         ]
       },
       "/Users/blakesergesketter/m2/projects/coffee_shop/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/blakesergesketter/m2/projects/coffee_shop/spec/features/cafes/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/blakesergesketter/m2/projects/coffee_shop/spec/features/drinks/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/blakesergesketter/m2/projects/coffee_shop/spec/models/cafe_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
           null
         ]
       },
@@ -253,17 +340,44 @@
           null
         ]
       },
+      "/Users/blakesergesketter/m2/projects/coffee_shop/spec/models/drinks_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/blakesergesketter/m2/projects/coffee_shop/app/models/drink.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
       "/Users/blakesergesketter/m2/projects/coffee_shop/app/controllers/cafes_controller.rb": {
         "lines": [
           1,
           null,
           1,
-          0,
+          1,
           null,
           null,
           1,
           1,
-          1,
+          null,
           null,
           null
         ]
@@ -273,8 +387,19 @@
           1,
           null
         ]
+      },
+      "/Users/blakesergesketter/m2/projects/coffee_shop/app/controllers/drinks_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1693089809
+    "timestamp": 1693178494
   }
 }
