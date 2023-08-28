@@ -230,12 +230,38 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
       "/Users/blakesergesketter/m2/projects/coffee_shop/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/blakesergesketter/m2/projects/coffee_shop/spec/features/cafes/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -305,11 +331,6 @@
       "/Users/blakesergesketter/m2/projects/coffee_shop/spec/features/drinks/show_spec.rb": {
         "lines": [
           1,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           null,
           1,
@@ -398,6 +419,24 @@
           null
         ]
       },
+      "/Users/blakesergesketter/m2/projects/coffee_shop/app/controllers/cafes/drinks_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/blakesergesketter/m2/projects/coffee_shop/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/Users/blakesergesketter/m2/projects/coffee_shop/app/controllers/cafes_controller.rb": {
         "lines": [
           1,
@@ -409,13 +448,6 @@
           1,
           1,
           null,
-          null,
-          null
-        ]
-      },
-      "/Users/blakesergesketter/m2/projects/coffee_shop/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
           null
         ]
       },
@@ -430,11 +462,10 @@
           1,
           1,
           null,
-          null,
           null
         ]
       }
     },
-    "timestamp": 1693179978
+    "timestamp": 1693231065
   }
 }

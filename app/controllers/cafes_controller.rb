@@ -6,6 +6,5 @@ class CafesController < ApplicationController
 
   def show 
     @cafe = Cafe.find(params[:id])
-    # require 'pry'; binding.pry
   end
 end
