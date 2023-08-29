@@ -12,9 +12,9 @@ RSpec.describe "Cafes index page", type: :feature do
       @cafe3 = Cafe.create!(name: "Bobs Diner", city: "Indianapolis", rating: 4, rewards_program: false)
     end
 
-    it 'Shows the names of every cafe record' do 
+    it "Shows the names of every cafe record" do 
       visit '/cafes' 
-      
+
       expect(page).to have_content("Daily Grind")
       expect(page).to have_content("Starbucks")
       expect(page).to have_content("Bobs Diner")
@@ -23,7 +23,7 @@ RSpec.describe "Cafes index page", type: :feature do
     
     it "Shows sorted cafe records by Most Recently Created" do 
       visit '/cafes'
-      save_and_open_page
+
       expect(@cafe3.name).to appear_before(@cafe2.name)
       expect(@cafe2.name).to appear_before(@cafe1.name)
     end
