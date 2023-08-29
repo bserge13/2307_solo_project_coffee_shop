@@ -31,4 +31,13 @@ describe Cafe, type: :model do
     end
   end 
 
+  describe "Class method" do 
+    it "lists Cafes in decending order" do 
+      @cafe1 = Cafe.create!(name: "Daily Grind", city: "Evansville", rating: 5, rewards_program: true)
+      @cafe2 = Cafe.create!(name: "Starbucks", city: "Owensboro", rating: 3, rewards_program: true)
+      @cafe3 = Cafe.create!(name: "Bobs Diner", city: "Indianapolis", rating: 4, rewards_program: false)
+
+      expect(Cafe.desc_order).to eq([@cafe3, @cafe2, @cafe1])
+    end
+  end
 end
