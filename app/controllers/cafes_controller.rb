@@ -1,7 +1,7 @@
 class CafesController < ApplicationController
 
   def index 
-    @cafes = Cafe.all
+    @cafes = Cafe.all.order(created_at: :desc)
   end
 
   def show 

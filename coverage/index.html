@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-08-28T08:57:45-05:00">2023-08-28T08:57:45-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-08-29T09:50:50-05:00">2023-08-29T09:50:50-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.07
+         1.1
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>159</b> relevant lines,
-    <span class="green"><b>159</b> lines covered</span> and
+    <b>166</b> relevant lines,
+    <span class="green"><b>166</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -84,7 +84,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#a5a04af94de621613b661408d5aa80567e6ab264" class="src_link" title="app/controllers/cafes/drinks_controller.rb">app/controllers/cafes/drinks_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">8</td>
+            <td class="cell--number">7</td>
             <td class="cell--number">4</td>
             <td class="cell--number">4</td>
             <td class="cell--number">0</td>
@@ -99,7 +99,7 @@
             <td class="cell--number">5</td>
             <td class="cell--number">5</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">1.20</td>
             
           </tr>
         
@@ -260,7 +260,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#3e0e371623b64d6fbf4a16170ad203ece69f9294" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">11</td>
+            <td class="cell--number">14</td>
             <td class="cell--number">6</td>
             <td class="cell--number">6</td>
             <td class="cell--number">0</td>
@@ -271,11 +271,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#89359549601be494be24e54a9a3e39c0b316981e" class="src_link" title="spec/features/cafes/index_spec.rb">spec/features/cafes/index_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">21</td>
-            <td class="cell--number">13</td>
-            <td class="cell--number">13</td>
+            <td class="cell--number">32</td>
+            <td class="cell--number">20</td>
+            <td class="cell--number">20</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">1.25</td>
             
           </tr>
         
@@ -464,18 +464,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
-            
-            
-
-            
-
-            <code class="ruby">    # require &#39;pry&#39;; binding.pry</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
+          <li class="covered" data-hits="1" data-linenumber="4">
             <span class="hits">1</span>
             
 
@@ -486,7 +475,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
+          <li class="covered" data-hits="1" data-linenumber="5">
             <span class="hits">1</span>
             
 
@@ -497,7 +486,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="never" data-hits="" data-linenumber="6">
             
             
 
@@ -508,7 +497,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
+          <li class="never" data-hits="" data-linenumber="7">
             
             
 
@@ -583,13 +572,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="4">
+            <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">    @cafes = Cafe.all</code>
+            <code class="ruby">    @cafes = Cafe.all.order(created_at: :desc)</code>
           </li>
         </div>
       
@@ -3479,13 +3468,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="8">
+            
             
 
             
 
-            <code class="ruby">  get &quot;/drinks&quot;, to: &quot;drinks#index&quot;</code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
@@ -3496,7 +3485,7 @@
 
             
 
-            <code class="ruby">  get &quot;/drinks/:id&quot;, to: &quot;drinks#show&quot;</code>
+            <code class="ruby">  get &quot;/drinks&quot;, to: &quot;drinks#index&quot;</code>
           </li>
         </div>
       
@@ -3507,12 +3496,45 @@
 
             
 
-            <code class="ruby">  get &quot;/cafes/:cafe_id/drinks&quot;, to: &quot;cafes/drinks#index&quot;</code>
+            <code class="ruby">  get &quot;/drinks/:id&quot;, to: &quot;drinks#show&quot;</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  get &quot;/cafes/:cafe_id/drinks&quot;, to: &quot;cafes/drinks#index&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
             
             
 
@@ -3541,8 +3563,8 @@
     
 
     <div class="t-line-summary">
-      <b>13</b> relevant lines.
-      <span class="green"><b>13</b> lines covered</span> and
+      <b>20</b> relevant lines.
+      <span class="green"><b>20</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -3582,18 +3604,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby"># User Story 6, Parent Index sorted by Most Recently Created</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="4">
+            
             
 
             
 
-            <code class="ruby">RSpec.describe &quot;Cafes index page&quot;, type: :feature do </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -3604,56 +3626,12 @@
 
             
 
-            <code class="ruby">  before :each do </code>
+            <code class="ruby">RSpec.describe &quot;Cafes index page&quot;, type: :feature do </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    @cafe1 = Cafe.create!(name: &quot;Daily Grind&quot;, city: &quot;Evansville&quot;, rating: 5, rewards_program: true)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    @cafe2 = Cafe.create!(name: &quot;Starbucks&quot;, city: &quot;Owensboro&quot;, rating: 3, rewards_program: true)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    @cafe3 = Cafe.create!(name: &quot;Bobs Diner&quot;, city: &quot;Indianapolis&quot;, rating: 4, rewards_program: false)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="9">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="10">
+          <li class="never" data-hits="" data-linenumber="6">
             
             
 
@@ -3664,7 +3642,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
+          <li class="covered" data-hits="1" data-linenumber="7">
             <span class="hits">1</span>
             
 
@@ -3675,24 +3653,68 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
+          <li class="covered" data-hits="1" data-linenumber="8">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    it &#39;Shows the names of every cafe record&#39; do </code>
+            <code class="ruby">    before :each do </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="13">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="9">
+            <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">      visit &#39;/cafes&#39; </code>
+            <code class="ruby">      @cafe1 = Cafe.create!(name: &quot;Daily Grind&quot;, city: &quot;Evansville&quot;, rating: 5, rewards_program: true) </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="10">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">      sleep(1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="11">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">      @cafe2 = Cafe.create!(name: &quot;Starbucks&quot;, city: &quot;Owensboro&quot;, rating: 3, rewards_program: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="12">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">      sleep(1)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="13">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">      @cafe3 = Cafe.create!(name: &quot;Bobs Diner&quot;, city: &quot;Indianapolis&quot;, rating: 4, rewards_program: false)</code>
           </li>
         </div>
       
@@ -3703,18 +3725,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="15">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="15">
+            
             
 
             
 
-            <code class="ruby">      expect(page).to have_content(&quot;Daily Grind&quot;)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -3725,7 +3747,7 @@
 
             
 
-            <code class="ruby">      expect(page).to have_content(&quot;Starbucks&quot;)</code>
+            <code class="ruby">    it &#39;Shows the names of every cafe record&#39; do </code>
           </li>
         </div>
       
@@ -3736,7 +3758,7 @@
 
             
 
-            <code class="ruby">      expect(page).to have_content(&quot;Bobs Diner&quot;)</code>
+            <code class="ruby">      visit &#39;/cafes&#39; </code>
           </li>
         </div>
       
@@ -3747,12 +3769,45 @@
 
             
 
+            <code class="ruby">      expect(page).to have_content(&quot;Daily Grind&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(page).to have_content(&quot;Starbucks&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(page).to have_content(&quot;Bobs Diner&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">      expect(page).to have_content(@cafe1.name)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="19">
+          <li class="never" data-hits="" data-linenumber="22">
             
             
 
@@ -3763,7 +3818,95 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
+          <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">    </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="24">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;Shows sorted cafe records by Most Recently Created&quot; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="25">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      visit &#39;/cafes&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      save_and_open_page</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@cafe3.name).to appear_before(@cafe2.name)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(@cafe2.name).to appear_before(@cafe1.name)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
             
             
 
@@ -3774,7 +3917,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="21">
+          <li class="never" data-hits="" data-linenumber="32">
             
             
 
